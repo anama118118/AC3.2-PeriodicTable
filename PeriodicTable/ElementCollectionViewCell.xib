@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ElementCell" id="gTV-IL-0wX" customClass="ElementCollectionViewCell" customModule="PeriodicTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-dW-MFf" customClass="ElementView" customModule="PeriodicTable" customModuleProvider="target">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jRs-dW-MFf" secondAttribute="trailing" id="ARz-Ct-w1F"/>
+                <constraint firstItem="jRs-dW-MFf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jFs-Uv-z2a"/>
+                <constraint firstAttribute="bottom" secondItem="jRs-dW-MFf" secondAttribute="bottom" id="lti-Gg-0RF"/>
+                <constraint firstItem="jRs-dW-MFf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p62-VM-OaO"/>
+            </constraints>
+            <size key="customSize" width="202" height="205"/>
+            <connections>
+                <outlet property="elementView" destination="jRs-dW-MFf" id="Jmj-ir-kPb"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="84.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

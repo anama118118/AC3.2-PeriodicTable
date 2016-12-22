@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ElementView" customModule="PeriodicTable" customModuleProvider="target">
+            <connections>
+                <outlet property="atomicNumberLabel" destination="bqr-ns-APX" id="09N-xa-LEN"/>
+                <outlet property="symbolLabel" destination="Ha2-NG-c7y" id="dSd-dx-hqj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqr-ns-APX" userLabel="Atomic Number">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha2-NG-c7y" userLabel="Symbol">
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ha2-NG-c7y" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="0bW-fC-u8O"/>
+                <constraint firstItem="bqr-ns-APX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2BS-IA-uyX"/>
+                <constraint firstItem="Ha2-NG-c7y" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="4ph-Nm-mQt"/>
+                <constraint firstItem="Ha2-NG-c7y" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6um-wW-z8K"/>
+                <constraint firstItem="bqr-ns-APX" firstAttribute="height" secondItem="Ha2-NG-c7y" secondAttribute="height" multiplier="0.3" id="R66-0e-XZk"/>
+                <constraint firstItem="Ha2-NG-c7y" firstAttribute="top" secondItem="bqr-ns-APX" secondAttribute="bottom" id="egv-t0-S0I"/>
+                <constraint firstItem="Ha2-NG-c7y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y00-0L-X7q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-155" y="-262"/>
+        </view>
+    </objects>
+</document>
